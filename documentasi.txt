@@ -1,0 +1,20 @@
+//
+const url = http://127.0.0.1:3000
+
+absen
+get         => url/absen   {untuk mendapatkan seluruh data absensi}
+get by id   => url/absen/:id   {untuk mendapatkan data absensi berdasarkan params id}
+post        => url/absen   {untuk menambahkan data absensi atau mengajukan cuti/sakit}
+update      => url/absen/:id   {untuk mengupdate data absensi berdasarkan params id}
+delete      => url/absen/:id   {untuk menhapus data}
+
+
+Approve
+get         => url/approve   {untuk mendapatkan seluruh data yang mengajukan ijin cuti atau sakit}
+update      => url/approve/:id   {untuk mengapprove data absensi terimah atau tolak}{body => status_acc yang awalnya 0 menjadi 1 jika di acc dan menjadi 2 jika di tolak}
+
+report
+get         => url/report   {untuk melihat jumlah hadir, cuti, sakit dan telat seseorang berdasakan bulan, tahun}
+
+pegawai
+post        => url/pegawai   {untuk menambahkan data pegawai}
